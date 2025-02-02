@@ -26,4 +26,34 @@ a) passagem do parâmetro entradas por referência constante (para evitar cópia
 b) uso de #ifndef e #define para proteção do cabeçalho
 c) estrutura clara para herança
 
-04 - Implementar a classe NeuronioReLu
+04 - Neuronio ReLU (Rectified Linear Unit): tipo de neurônio usado em redes neurais,
+cuja principal característica é a função de ativação ReLu.
+Realiza três operações principais:
+    a) Multiplicação das entradas pelos pesos
+    b) Soma ponderada das entradas, junto com o bias
+    c) A função de ativação decide se o neurônio dispara ou não
+Ativação:
+    x < 0 -> 0
+    x >= 0 -> x
+Vantagens:
+    a) Evita o Vanishing Gradient (de outros modelos)
+    b) Computacionalmente eficiente
+    c) Facilita o aprendizado de redes profundas
+
+05 - Implementar a classe NeuronioReLu
+O que precisa fazer?
+    * Herdar de Neuronio (a classe base abstrata).
+    * Implementar o método predict(), que calcula a saída do neurônio usando a função ReLU.
+    * Utilizar a fórmula correta para a saída:
+        saida = max(0, ∑(𝑒𝑛𝑡𝑟𝑎𝑑𝑎𝑖 × 𝑝𝑒𝑠𝑜𝑖) + bias)
+    * Garantir que a classe está bem encapsulada e eficiente.
+
+06 - Classe NeuronioReLu
+O que foi feito?
+    * Herdado Neuronio e implementado predict()
+    * Usado loop for para calcular o somatório ponderado
+    * Aplicada a função max para seguir a regra da ReLu
+    * Usado override para garantir a subscrição do método predict()
+    * Usado size_t como tipo seguro para índices de vetor (evita problemas com números negativos)
+
+07 - 
