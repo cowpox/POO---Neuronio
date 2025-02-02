@@ -1,0 +1,7 @@
+# Ignorar arquivos compilados
+build/
+*.exe
+*.o
+
+# Ignorar arquivos temporários do VS Code
+.vscode/

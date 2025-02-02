@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "neuronio_relu.hpp"
+#include "../include/neuronio_relu.hpp"
 
 using namespace std;
 
