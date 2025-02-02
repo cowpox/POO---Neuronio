@@ -1,0 +1,29 @@
+01 - Entender o problema:
+    a) implementar uma classe abstrata para neurônios genéricos
+    b) implementar uma classe derivada para neuronios ReLu
+    c) implementar o método predict() (entrada + pesos + bias => saída)
+    d) implementar uma main() para testar as classes derivadas
+
+02 - Classe abstrata: classe que não pode ser instanciada diretamente e serve
+como base para outras classes. Ela define um modelo genérico que outras classes
+derivadas devem seguir.
+Características:
+    * Contém pelo menos um método virtual puro (= 0).
+    * Não pode ser instanciada diretamente.
+    * É usada como base para herança.
+    * Força a implementação dos métodos na classe derivada.
+Vantagens:
+    * Força a implementação: Garante que todas as classes derivadas implementem
+    os métodos necessários.
+    * Permite polimorfismo: Objetos podem ser manipulados via ponteiros para a
+    classe base.
+    * Código mais organizado: Define um modelo genérico para reutilização e expansão.
+    * Facilita manutenção e escalabilidade: Se precisar adicionar um novo tipo de neurônio,
+    o código antigo não precisa ser alterado.
+
+03 - Aprimorado o header da classe Neuronio:
+a) passagem do parâmetro entradas por referência constante (para evitar cópias)
+b) uso de #ifndef e #define para proteção do cabeçalho
+c) estrutura clara para herança
+
+04 - Implementar a classe NeuronioReLu
