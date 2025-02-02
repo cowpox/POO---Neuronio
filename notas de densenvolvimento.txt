@@ -56,4 +56,22 @@ O que foi feito?
     * Usado override para garantir a subscrição do método predict()
     * Usado size_t como tipo seguro para índices de vetor (evita problemas com números negativos)
 
-07 - 
+07 - Implementar a main()
+Cumprir os requesitos:
+    * Utilizar um método abstrato para implementar uma classe concreta.
+    * Trabalhe com polimorfismo para calcular a saída.
+    * Manipule objetos das classes derivadas através de ponteiros para a classe base.
+    * Use vetores ou arrays para representar entradas e pesos.
+    * Implementar a main com mais variações de casos do que os apresentados nos exemplos.
+
+08 - Não foi possível acessar pesos na main porque foi declarada como protected na classe Neuronio,
+Isso acontece porque protected permite acesso apenas dentro da própria classe e de classes derivadas.
+Solução: adicionei um método público getPesos() na classe Neuronio
+
+09 - Conclusão:
+    * O código atende a todos os requisitos
+    * Testados 10 neurônios com 10 vetores de entrada variados (2 a 5 elementos)
+    * Incluídos os exemplos do enunciado
+    * O gerenciamento de memória está bem estruturado
+
+
